@@ -38,7 +38,7 @@ public class Main {
         IO.println();
 
         Collections.sort(xPlusY);
-        System.out.println("a) xPlusY:" + xPlusY);
+        IO.println("a) xPlusY:" + xPlusY);
 
         IO.println();
         IO.println();
@@ -68,6 +68,7 @@ public class Main {
         IO.println();
 
         List<Student> listaStudenti = new ArrayList<>();
+
         listaStudenti.add(new Student(112, "Ioan", "Popa", "TI21/1"));
         listaStudenti.add(new Student(112, "Maria", "Oprea", "TI21/1"));
         listaStudenti.add(new Student(120, "Alis", "Popa", "TI21/2"));
