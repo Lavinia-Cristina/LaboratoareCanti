@@ -1,5 +1,5 @@
 package lab2;
-
+import lab1.Student;
 import java.util.*;
 
 public class Main {
@@ -38,7 +38,7 @@ public class Main {
         IO.println();
 
         Collections.sort(xPlusY);
-        IO.println("a) xPlusY:" + xPlusY);
+        System.out.println("a) xPlusY:" + xPlusY);
 
         IO.println();
         IO.println();
@@ -64,5 +64,56 @@ public class Main {
             }
         }
         IO.println("d) xPlusYLimitedByP (<= " + p + "): " + xPlusYLimitedByP);
+
+        IO.println();
+
+        List<Student> listaStudenti = new ArrayList<>();
+        listaStudenti.add(new Student(112, "Ioan", "Popa", "TI21/1"));
+        listaStudenti.add(new Student(112, "Maria", "Oprea", "TI21/1"));
+        listaStudenti.add(new Student(120, "Alis", "Popa", "TI21/2"));
+        listaStudenti.add(new Student(122, "Mihai", "Vecerdea", "TI22/1"));
+        listaStudenti.add(new Student(122, "Eugen", "Uritescu", "TI22/2"));
+
+        IO.println("Continutul listei: ");
+        IO.println();
+        for (Student s : listaStudenti) {
+            IO.println(s);
+        }
+        IO.println();
+
+        Student StudentCautat1 = new Student(120, "Alis", "Popa", "TI21/2");
+        Student StudentCautat2 = new Student(112, "Maria", "Popa", "TI21/1");
+
+        IO.println("Cautare liniara:");
+        IO.println();
+        IO.println("Exista Alis Popa? " + cautareLiniara(listaStudenti, StudentCautat1));
+        IO.println("Exista Maria Popa? " + cautareLiniara(listaStudenti, StudentCautat2));
+        IO.println();
+
+        IO.println("Cautare cu HashSet, complexitate 0(1):");
+        IO.println();
+
+        Set<Student> setStudenti = new HashSet<>(listaStudenti);
+
+        IO.println("Exista Alis Popa? " + cautareRapidaO1(setStudenti, StudentCautat1));
+        IO.println("Exista Maria Popa? " + cautareRapidaO1(setStudenti, StudentCautat2));
+        IO.println();
     }
+
+    //Cautare liniara
+    public static boolean cautareLiniara(List<Student> lista, Student cautat) {
+        for (Student s : lista) {
+            if (s.getPrenume().equals(cautat.getPrenume()) && s.getNume().equals(cautat.getNume()) && s.getFormatieDeStudiu().equals(cautat.getFormatieDeStudiu())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // COMPLEXITATE 0(1)
+    public static boolean cautareRapidaO1(Set<Student> setStudenti, Student cautat) {
+
+        return setStudenti.contains(cautat);
+    }
+
 }
