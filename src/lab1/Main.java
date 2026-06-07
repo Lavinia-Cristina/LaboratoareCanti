@@ -2,7 +2,8 @@ package lab1;
 
 public class Main {
     public static void main(String[] args) {
-
+        IO.println("Laborator 1:");
+        IO.println();
         Student s1 = new Student(112, "Ioan", "Popa", "TI21/1");
         Student s2 = new Student(112, "Maria", "Oprea", "TI21/1");
         Student s3 = new Student(120, "Alis", "Popa", "TI21/2");
