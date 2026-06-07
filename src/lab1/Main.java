@@ -12,7 +12,7 @@ public class Main {
         Student[] studenti = {s1, s2, s3, s4, s5};
 
         for (Student student : studenti) {
-            System.out.println(student);
+            IO.println(student);
         }
     }
 }
