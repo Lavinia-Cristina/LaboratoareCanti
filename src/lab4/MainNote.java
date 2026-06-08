@@ -29,7 +29,7 @@ public class MainNote {
                 String nume = parti[2].trim();
                 String formatie = parti[3].trim();
 
-                Student s = new Student(numarMatricol, prenume, nume, formatie);
+                Student s = new Student(numarMatricol, prenume, nume, formatie, 8.70f);
                 mapStudenti.put(numarMatricol, s);
             }
         } catch (IOException e) {

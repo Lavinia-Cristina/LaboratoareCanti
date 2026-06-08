@@ -69,11 +69,11 @@ public class Main {
 
         List<Student> listaStudenti = new ArrayList<>();
 
-        listaStudenti.add(new Student(112, "Ioan", "Popa", "TI21/1"));
-        listaStudenti.add(new Student(112, "Maria", "Oprea", "TI21/1"));
-        listaStudenti.add(new Student(120, "Alis", "Popa", "TI21/2"));
-        listaStudenti.add(new Student(122, "Mihai", "Vecerdea", "TI22/1"));
-        listaStudenti.add(new Student(122, "Eugen", "Uritescu", "TI22/2"));
+        listaStudenti.add(new Student(112, "Ioan", "Popa", "TI21/1", 8.70f));
+        listaStudenti.add(new Student(112, "Maria", "Oprea", "TI21/1", 8.70f));
+        listaStudenti.add(new Student(120, "Alis", "Popa", "TI21/2", 8.70f));
+        listaStudenti.add(new Student(122, "Mihai", "Vecerdea", "TI22/1", 8.70f));
+        listaStudenti.add(new Student(122, "Eugen", "Uritescu", "TI22/2", 8.70f));
 
         IO.println("Continutul listei: ");
         IO.println();
@@ -82,8 +82,8 @@ public class Main {
         }
         IO.println();
 
-        Student StudentCautat1 = new Student(120, "Alis", "Popa", "TI21/2");
-        Student StudentCautat2 = new Student(112, "Maria", "Popa", "TI21/1");
+        Student StudentCautat1 = new Student(120, "Alis", "Popa", "TI21/2", 8.70f);
+        Student StudentCautat2 = new Student(112, "Maria", "Popa", "TI21/1", 8.70f);
 
         IO.println("Cautare liniara:");
         IO.println();

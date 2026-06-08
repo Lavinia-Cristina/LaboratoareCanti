@@ -11,12 +11,12 @@ public class Student {
 
 
 
-    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
+    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu, float nota) {
         this.numarMatricol = numarMatricol;
         this.prenume = prenume;
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
-        this.nota=0;
+        this.nota= nota;
     }
 
     public void setNota(float nota) {

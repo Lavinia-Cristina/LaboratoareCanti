@@ -32,7 +32,7 @@ public class MainStudents {
                 String nume = parti[2].trim();
                 String formatie = parti[3].trim();
 
-                listaStudenti.add(new Student(numarMatricol, prenume, nume, formatie));
+                listaStudenti.add(new Student(numarMatricol, prenume, nume, formatie, 8.70f));
             }
 
             IO.println("Studentii din fisier: ");
