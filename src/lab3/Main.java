@@ -1,4 +1,6 @@
 package lab3;
+import lab1.Student;
+
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,7 +18,7 @@ public class Main {
         try {
             String continutFisier = new String(Files.readAllBytes(inputPath));
             String[] liniiArray = continutFisier.split("\n");
-            
+
             List<String> liniiInMemorie = new ArrayList<>(Arrays.asList(liniiArray));
             List<String> liniiPentruSalvare = new ArrayList<>();
 
@@ -30,7 +32,10 @@ public class Main {
                 IO.println(linieModificataA);
             }
 
+            IO.println();
+
             IO.println("b) Newline dupa punct");
+            IO.println();
             IO.println();
 
             for (String linie : liniiInMemorie) {
