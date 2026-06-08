@@ -11,9 +11,9 @@ import lab7.util.PasswordMaker;
 public class Main {
     public static void main(String[] args) {
 
-        Triangle tri = new Triangle(1.1F, 2.0F, "red");
-        Circle c = new Circle(1.5F, "yellow");
-        Square sq = new Square(1.2F, "blue");
+        Triangle tri = new Triangle(1.1f, 2.0f, "red");
+        Circle c = new Circle(1.5f, "yellow");
+        Square sq = new Square(1.2f, "blue");
 
         IO.println();
         IO.println("Area = " + tri.getArea()+" details: " + tri);
