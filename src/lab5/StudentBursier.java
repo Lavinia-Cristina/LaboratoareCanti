@@ -34,4 +34,8 @@ public class StudentBursier extends Student {
 
         return super.toString() + " | Bursa: " + cuantumBursa + " RON";
     }
+
+    public double getCuantumBursa() {
+        return this.cuantumBursa;
+    }
 }
