@@ -7,6 +7,8 @@ public class Student {
     String prenume;
     String nume;
     String formatieDeStudiu;
+    float nota;
+
 
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
@@ -14,6 +16,11 @@ public class Student {
         this.prenume = prenume;
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
+        this.nota=0;
+    }
+
+    public void setNota(float nota) {
+        this.nota = nota;
     }
 
     public String getNume() {
@@ -32,9 +39,13 @@ public class Student {
         return formatieDeStudiu;
     }
 
+    public float getNota() {
+        return nota;
+    }
+
     @Override
     public String toString() {
-        return numarMatricol + ", " + prenume + " " + nume + ", " + formatieDeStudiu;
+        return numarMatricol + ", " + prenume + " " + nume + ", " + formatieDeStudiu + ","+nota;
     }
     //PENTRU 2.5.3 la LAB 2
 
